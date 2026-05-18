@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ООО Булыгин Компани</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topBar">
+  <div class="logo">Другое сделал: ООО Булыгин Компани</div>
+  <div class="coinBox">🪙 <span id="coinBalance">0</span></div>
+</div>
+
+<div class="characterSection">
+  <div class="character">😀</div>
+  <input id="playerName" value="Михайлов Дмитрий">
+</div>
+
+<div class="menu">
+  <button>Ловец ответов</button>
+  <button>Магазин мер</button>
+  <button onclick="toggleShop()">Магазин</button>
+</div>
+
+<div class="levelBox">
+  Уровень: <span id="level">1</span>
+</div>
+
+<div class="promoBox">
+  <h2>Введите код</h2>
+  <input id="promoInput">
+  <button onclick="activatePromo()">Активировать</button>
+</div>
+
+<div id="shop" class="shop hidden">
+  <div class="shopItem">Бомжик</div>
+  <div class="shopItem">Ровный пацик</div>
+  <div class="shopItem">Зефирка</div>
+  <div class="shopItem">Зелёный лидер</div>
+  <div class="shopItem">Бульба</div>
+  <div class="shopItem">Индийский мальчик</div>
+  <div class="shopItem">Турбо супер мега ультра игрок в BS</div>
+  <div class="shopItem">БОГАЧ</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
