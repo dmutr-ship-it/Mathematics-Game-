@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Mathematics Game</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<div class='top'>
+<h1>Mathematics Game</h1>
+<div class='stats'>
+<span>🪙 <span id='coins'>0</span></span>
+<span>⭐ <span id='level'>1</span></span>
+<button onclick='openShop()'>Магазин</button>
+</div>
+</div>
+
+<div class='main'>
+<div class='left'>
+<h2>Другое сделал: ООО Булыгин Компани</h2>
+
+<button onclick='correctAnswer()'>Ловец ответов</button>
+<button onclick='correctAnswerBig()'>Магазин мер</button>
+
+<div class='promo'>
+<h3>Введите код</h3>
+<input id='promo'>
+<button onclick='activatePromo()'>Активировать</button>
+</div>
+</div>
+
+<div class='characterBox'>
+<img id='character' src='img/default.png'>
+<input id='nickname' value='Михайлов Дмитрий'>
+</div>
+</div>
+
+<div id='shop' class='shop hidden'>
+<h2>Магазин</h2>
+
+<div class='grid'>
+<button onclick="buySkin('rich',500)">БОГАЧ</button>
+<button onclick="buySkin('adidas',300)">Ровный пацик</button>
+<button onclick="buySkin('marshmallow',250)">Зефирка</button>
+<button onclick="buySkin('india',450)">Индийский мальчик</button>
+<button onclick="buySkin('green',350)">Зелёный лидер</button>
+
+<button onclick="buyAccessory('Очки',100)">Очки</button>
+<button onclick="buyAccessory('Кепка',120)">Кепка</button>
+<button onclick="buyAccessory('Цепь',150)">Золотая цепь</button>
+<button onclick="buyAccessory('Крылья',500)">Крылья</button>
+</div>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>
